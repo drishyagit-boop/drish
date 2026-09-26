@@ -4,9 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>My Website</title>
+    <title>Bloom & Bliss | Bouquet Shop</title>
 
     <link rel="stylesheet" href="style.css">
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
 </head>
 
 <body>
@@ -14,148 +19,408 @@
     <!-- Navigation -->
     <header>
         <nav class="navbar">
-            <h2 class="logo">MyWebsite</h2>
 
-            <ul class="nav-links">
+            <a href="#home" class="logo">
+                🌷 Bloom & Bliss
+            </a>
+
+            <ul class="nav-links" id="navLinks">
                 <li><a href="#home">Home</a></li>
+                <li><a href="#shop">Bouquets</a></li>
                 <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
 
-            <button class="menu-btn" onclick="toggleMenu()">☰</button>
+            <button class="menu-btn" onclick="toggleMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
         </nav>
     </header>
 
-    <!-- Home -->
-    <section id="home" class="hero">
 
-        <div class="hero-text">
-            <p class="hello">Hello, I'm</p>
+    <!-- Hero Section -->
+    <section class="hero" id="home">
 
-            <h1>Your Name</h1>
+        <div class="hero-content">
 
-            <h2>Student & Web Developer</h2>
-
-            <p>
-                Welcome to my website! I am learning web development
-                and building creative and useful projects.
+            <p class="small-title">
+                Fresh flowers. Beautiful moments.
             </p>
 
-            <div class="buttons">
-                <a href="#projects" class="btn">View My Projects</a>
-                <a href="#contact" class="btn secondary">Contact Me</a>
+            <h1>
+                Say It With
+                <span>Flowers</span>
+            </h1>
+
+            <p>
+                Beautiful hand-crafted bouquets made with love,
+                care and the freshest flowers for every special moment.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="#shop" class="main-btn">
+                    Shop Bouquets
+                </a>
+
+                <a href="#contact" class="outline-btn">
+                    Contact Us
+                </a>
+            </div>
+
+        </div>
+
+        <div class="hero-flower">
+            <div class="flower-circle">
+                💐
             </div>
         </div>
 
-        <div class="hero-card">
-            <div class="circle">
-                👨‍💻
+    </section>
+
+
+    <!-- Features -->
+    <section class="features">
+
+        <div class="feature">
+            <i class="fa-solid fa-leaf"></i>
+
+            <div>
+                <h3>Fresh Flowers</h3>
+                <p>Freshly selected every day.</p>
             </div>
+        </div>
+
+
+        <div class="feature">
+            <i class="fa-solid fa-heart"></i>
+
+            <div>
+                <h3>Made With Love</h3>
+                <p>Beautifully arranged by hand.</p>
+            </div>
+        </div>
+
+
+        <div class="feature">
+            <i class="fa-solid fa-truck"></i>
+
+            <div>
+                <h3>Fast Delivery</h3>
+                <p>Flowers delivered to your door.</p>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- Shop -->
+    <section class="shop section" id="shop">
+
+        <div class="section-heading">
+
+            <p>OUR COLLECTION</p>
+
+            <h2>Beautiful Bouquets</h2>
+
+            <span>
+                Find the perfect flowers for every occasion.
+            </span>
+
+        </div>
+
+
+        <div class="products">
+
+            <!-- Product 1 -->
+            <div class="product-card">
+
+                <div class="product-image pink">
+                    🌹
+                </div>
+
+                <div class="product-info">
+
+                    <span class="tag">
+                        Bestseller
+                    </span>
+
+                    <h3>Romantic Roses</h3>
+
+                    <p>
+                        A beautiful arrangement of fresh red roses
+                        wrapped elegantly for your special someone.
+                    </p>
+
+                    <div class="product-bottom">
+
+                        <strong>₹899</strong>
+
+                        <button onclick="orderBouquet('Romantic Roses')">
+                            Order Now
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Product 2 -->
+            <div class="product-card">
+
+                <div class="product-image purple">
+                    🌷
+                </div>
+
+                <div class="product-info">
+
+                    <span class="tag">
+                        Popular
+                    </span>
+
+                    <h3>Pink Tulip Love</h3>
+
+                    <p>
+                        Elegant pink tulips arranged with delicate
+                        greenery for a charming gift.
+                    </p>
+
+                    <div class="product-bottom">
+
+                        <strong>₹1,099</strong>
+
+                        <button onclick="orderBouquet('Pink Tulip Love')">
+                            Order Now
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Product 3 -->
+            <div class="product-card">
+
+                <div class="product-image yellow">
+                    🌻
+                </div>
+
+                <div class="product-info">
+
+                    <span class="tag">
+                        New
+                    </span>
+
+                    <h3>Sunny Sunflowers</h3>
+
+                    <p>
+                        Bright yellow sunflowers that bring happiness
+                        and positive energy to every occasion.
+                    </p>
+
+                    <div class="product-bottom">
+
+                        <strong>₹799</strong>
+
+                        <button onclick="orderBouquet('Sunny Sunflowers')">
+                            Order Now
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Product 4 -->
+            <div class="product-card">
+
+                <div class="product-image white">
+                    🌼
+                </div>
+
+                <div class="product-info">
+
+                    <span class="tag">
+                        Elegant
+                    </span>
+
+                    <h3>White Garden</h3>
+
+                    <p>
+                        A soft and elegant white floral arrangement
+                        perfect for peaceful celebrations.
+                    </p>
+
+                    <div class="product-bottom">
+
+                        <strong>₹999</strong>
+
+                        <button onclick="orderBouquet('White Garden')">
+                            Order Now
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Product 5 -->
+            <div class="product-card">
+
+                <div class="product-image mixed">
+                    💐
+                </div>
+
+                <div class="product-info">
+
+                    <span class="tag">
+                        Special
+                    </span>
+
+                    <h3>Colorful Celebration</h3>
+
+                    <p>
+                        A vibrant mix of colorful flowers made for
+                        birthdays and celebrations.
+                    </p>
+
+                    <div class="product-bottom">
+
+                        <strong>₹1,299</strong>
+
+                        <button onclick="orderBouquet('Colorful Celebration')">
+                            Order Now
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Product 6 -->
+            <div class="product-card">
+
+                <div class="product-image lavender">
+                    🪻
+                </div>
+
+                <div class="product-info">
+
+                    <span class="tag">
+                        Premium
+                    </span>
+
+                    <h3>Lavender Dreams</h3>
+
+                    <p>
+                        A sophisticated lavender bouquet with soft
+                        purple tones and elegant wrapping.
+                    </p>
+
+                    <div class="product-bottom">
+
+                        <strong>₹1,499</strong>
+
+                        <button onclick="orderBouquet('Lavender Dreams')">
+                            Order Now
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
         </div>
 
     </section>
 
 
     <!-- About -->
-    <section id="about" class="section">
+    <section class="about section" id="about">
 
-        <h2>About Me</h2>
-
-        <div class="about-box">
-            <p>
-                Hi! I'm a student interested in technology, programming,
-                and web development. I enjoy learning new skills and
-                creating projects using modern technologies.
-            </p>
-
-            <p>
-                This website is my personal space where I can showcase
-                my projects, skills, and achievements.
-            </p>
+        <div class="about-image">
+            🌸
         </div>
 
-    </section>
+        <div class="about-content">
 
+            <p class="section-label">
+                OUR STORY
+            </p>
 
-    <!-- Skills -->
-    <section id="skills" class="section">
+            <h2>
+                Flowers That Make
+                Moments Special
+            </h2>
 
-        <h2>My Skills</h2>
+            <p>
+                At Bloom & Bliss, we believe flowers are more than
+                just beautiful gifts. They are a way to express
+                emotions, celebrate relationships and create
+                unforgettable memories.
+            </p>
 
-        <div class="skills-container">
+            <p>
+                Every bouquet is carefully designed and hand-wrapped
+                using fresh flowers selected with love.
+            </p>
 
-            <div class="skill">
-                <span>HTML</span>
-                <div class="progress">
-                    <div class="progress-bar html"></div>
-                </div>
-            </div>
-
-            <div class="skill">
-                <span>CSS</span>
-                <div class="progress">
-                    <div class="progress-bar css"></div>
-                </div>
-            </div>
-
-            <div class="skill">
-                <span>JavaScript</span>
-                <div class="progress">
-                    <div class="progress-bar javascript"></div>
-                </div>
-            </div>
-
-            <div class="skill">
-                <span>Python</span>
-                <div class="progress">
-                    <div class="progress-bar python"></div>
-                </div>
-            </div>
+            <a href="#contact" class="main-btn">
+                Know More
+            </a>
 
         </div>
 
     </section>
 
 
-    <!-- Projects -->
-    <section id="projects" class="section">
+    <!-- Occasions -->
+    <section class="occasions section">
 
-        <h2>My Projects</h2>
+        <div class="section-heading">
 
-        <div class="projects-container">
+            <p>FLOWERS FOR EVERY MOMENT</p>
 
-            <div class="project-card">
-                <h3>Project 1</h3>
+            <h2>Choose Your Occasion</h2>
 
-                <p>
-                    A simple website created using HTML and CSS.
-                </p>
+        </div>
 
-                <a href="#" class="project-link">View Project →</a>
+
+        <div class="occasion-container">
+
+            <div class="occasion">
+                <span>❤️</span>
+                <h3>Anniversary</h3>
+                <p>Celebrate your love.</p>
             </div>
 
-
-            <div class="project-card">
-                <h3>Project 2</h3>
-
-                <p>
-                    A JavaScript project that solves a real-world problem.
-                </p>
-
-                <a href="#" class="project-link">View Project →</a>
+            <div class="occasion">
+                <span>🎂</span>
+                <h3>Birthday</h3>
+                <p>Make their day brighter.</p>
             </div>
 
+            <div class="occasion">
+                <span>💍</span>
+                <h3>Wedding</h3>
+                <p>Beautiful flowers for forever.</p>
+            </div>
 
-            <div class="project-card">
-                <h3>Project 3</h3>
-
-                <p>
-                    A creative project that demonstrates my programming skills.
-                </p>
-
-                <a href="#" class="project-link">View Project →</a>
+            <div class="occasion">
+                <span>🌸</span>
+                <h3>Just Because</h3>
+                <p>Surprise someone special.</p>
             </div>
 
         </div>
@@ -164,40 +429,65 @@
 
 
     <!-- Contact -->
-    <section id="contact" class="section">
+    <section class="contact section" id="contact">
 
-        <h2>Contact Me</h2>
+        <div class="section-heading">
+
+            <p>GET IN TOUCH</p>
+
+            <h2>Order Your Bouquet</h2>
+
+            <span>
+                Have a question or want a custom bouquet?
+                Send us a message.
+            </span>
+
+        </div>
+
 
         <form id="contactForm">
 
-            <input
-                type="text"
-                id="name"
-                placeholder="Your Name"
-                required
-            >
+            <div class="form-row">
+
+                <input
+                    type="text"
+                    id="name"
+                    placeholder="Your Name"
+                    required
+                >
+
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="Your Email"
+                    required
+                >
+
+            </div>
+
 
             <input
-                type="email"
-                id="email"
-                placeholder="Your Email"
-                required
+                type="text"
+                id="occasion"
+                placeholder="Occasion"
             >
+
 
             <textarea
                 id="message"
                 rows="6"
-                placeholder="Your Message"
+                placeholder="Tell us about your bouquet..."
                 required
             ></textarea>
 
-            <button type="submit" class="btn">
+
+            <button type="submit" class="main-btn">
                 Send Message
             </button>
 
-        </form>
+            <p id="formMessage"></p>
 
-        <p id="formMessage"></p>
+        </form>
 
     </section>
 
@@ -205,15 +495,88 @@
     <!-- Footer -->
     <footer>
 
-        <p>
-            © 2026 Your Name. All Rights Reserved.
-        </p>
+        <div class="footer-content">
 
-        <p>
-            Built with HTML, CSS & JavaScript
-        </p>
+            <div>
+                <h2>🌷 Bloom & Bliss</h2>
+
+                <p>
+                    Beautiful flowers for beautiful moments.
+                </p>
+            </div>
+
+
+            <div class="socials">
+
+                <a href="#">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+                <a href="#">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+
+                <a href="#">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="copyright">
+
+            <p>
+                © 2026 Bloom & Bliss. All Rights Reserved.
+            </p>
+
+        </div>
 
     </footer>
+
+
+    <!-- Order Popup -->
+    <div class="popup" id="orderPopup">
+
+        <div class="popup-box">
+
+            <button class="close-btn" onclick="closePopup()">
+                ×
+            </button>
+
+            <div class="popup-icon">
+                💐
+            </div>
+
+            <h2>Order Bouquet</h2>
+
+            <p id="selectedBouquet"></p>
+
+            <input
+                type="text"
+                id="customerName"
+                placeholder="Your Name"
+            >
+
+            <input
+                type="tel"
+                id="customerPhone"
+                placeholder="Phone Number"
+            >
+
+            <button
+                class="main-btn"
+                onclick="confirmOrder()"
+            >
+                Confirm Order
+            </button>
+
+            <p id="orderMessage"></p>
+
+        </div>
+
+    </div>
 
 
     <script src="script.js"></script>
